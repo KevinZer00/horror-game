@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let mouseX = canvas.width / 2;
     let mouseY = canvas.height / 2;
-    const flashlightRadius = 75;
+    const flashlightRadius = 125;
 
     const backgroundImage = new Image();
     backgroundImage.src = './images/background2.png';
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const timeText = currentDate.toLocaleTimeString();
             const dateText = currentDate.toLocaleDateString();
 
-            ctx.font = '20px Arial';
+            ctx.font = '30px Arial';
             ctx.fillStyle = 'white';
             ctx.textAlign = 'left';
             ctx.textBaseline = 'top';
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const text = `REC ${minutes}:${seconds}`;
 
             // Set font style for VHS text
-            ctx.font = '20px Arial';
+            ctx.font = '40px Arial';
             ctx.fillStyle = 'white';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
