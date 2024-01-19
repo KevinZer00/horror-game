@@ -52,7 +52,7 @@ html, body {
     background-repeat: no-repeat;
     height: auto; /* Adjust height based on content */
     text-align: center;
-    height: 200px;
+    height: 300px;
     padding: 200px; /* Padding inside the paper */
     display: flex;
     flex-direction: column;

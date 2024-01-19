@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const timeText = currentDate.toLocaleTimeString();
         const dateText = currentDate.toLocaleDateString();
 
-        ctx.font = '30px Arial';
+        ctx.font = '50px Arial';
         ctx.fillStyle = 'white';
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
 
         ctx.fillText(timeText, 10, 10);
-        ctx.fillText(dateText, 10, 40);
+        ctx.fillText(dateText, 10, 10 + 40 + 10);
 
         // Check if the jumpscare should be shown
         if (showJumpscare) {
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const text = `REC ${minutes}:${seconds}`;
 
         // Set font style for VHS text
-        ctx.font = '40px Arial';
+        ctx.font = '50px Arial';
         ctx.fillStyle = 'white';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
