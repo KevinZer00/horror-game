@@ -8,6 +8,27 @@ html, body {
     padding: 0;
     height: 100%;
     overflow: hidden; 
+    background-color: black;
+    position: relative;
+    font-family: 'Scary', sans-serif;
+}
+
+/* Overlay to mimic scanlines or screen texture */
+.screen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 1000; /* Below the frame but above other content */
 }
 
 .menu {
@@ -20,19 +41,19 @@ html, body {
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Ensure it's above other elements */
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+    background: rgba(0, 0, 0, 1); /* Dark overlay for contrast */
 }
 
 .menu-content {
     font-family: "Scary";
-    font-size: 30px;
+    font-size: 40px;
     background-image: url('/images/paper.png'); /* Paper as the background */
     background-size: contain; /* Adjust the size of the image */
     background-repeat: no-repeat;
     height: auto; /* Adjust height based on content */
     text-align: center;
     height: 200px;
-    padding: 100px; /* Padding inside the paper */
+    padding: 200px; /* Padding inside the paper */
     display: flex;
     flex-direction: column;
     justify-content: center;
